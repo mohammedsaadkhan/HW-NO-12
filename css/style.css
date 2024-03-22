@@ -1,0 +1,324 @@
+/*-------------- common css start-------------- */
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+   
+}
+.text-center{
+    text-align: center;
+}
+.section_info h2{
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+}
+ .section_info p{
+font-size: 13px;
+line-height: 41px;
+color: #7e8287;
+}
+ .section_info p b{
+    font-size: 23px;
+}
+/*-------------- common css end-------------- */
+
+/*-------------- Nav Section Css start-------------- */
+
+#nav{
+    background-color: #02918c;
+}
+
+#nav .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav ul{
+    list-style-type: none;
+}
+
+#nav li a{
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 61px;
+    padding: 0 25.5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#nav li a:hover{
+    color: #cfc91d;
+}
+/*-------------- Nav Section Css End*--------------/
+
+/* Banner Section Css Start */
+
+#banner{
+     
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 729px;
+    color: #ffffff;
+    align-items: center;
+}
+
+
+
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 25px;
+}
+#banner h1{
+    font-size: 68px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: 30px;
+    white-space: nowrap;
+    
+}
+
+#banner p{
+    font-size: 18px;
+    line-height: 33px;
+}
+
+#banner img{
+    display:block;
+    margin: 50px auto;
+}
+
+#banner a{
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    font-weight: 800;
+    font-size: 14px;
+    color: #0b1016;
+  line-height: 47px;
+    padding:10px 40px; 
+    transition: 0.5s;
+}
+
+#banner a:hover{
+    color: #ffffff;
+}
+/*-------------- Banner Section Css End *--------------/
+
+/* about section start */
+#about{
+    padding:98px 0;
+}
+#about .section_info{
+    padding: 0 136px;
+    margin-bottom: 80px;
+}
+#about .about_card{
+    width:25%;
+    border-right: 1px solid #d9dbdb;
+    padding:37px 61px 54px;
+    color: #7e8287;
+    
+}
+#about .about_card h3{
+    margin-bottom:28px;
+    margin-top:30px;
+    font-size:16px;
+}
+
+#about .about_card p{
+    line-height: 21px;
+    font-size: 11px;
+}
+#about .about_card:last-child{
+    border-right: none;
+}
+
+ 
+/*-------------- about section end *--------------/
+
+/* service section start */
+#service{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    color:#7e8287;
+    padding-top: 74px;
+}
+#service .add{
+    
+    width:455px;
+    padding-bottom: 56px;
+}
+
+#service .row{
+    width:455px;
+    padding-bottom: 86px;
+}
+#service .service_card{
+    width:164px;   
+}
+#service .service_card h3{
+    margin:19px 0;
+    font-size:16px;
+}
+#service .service_card p{
+    line-height: 21px;
+    font-size: 11px;
+}
+
+#service .two,#service .four{
+    margin:0 0 0 127px;
+}
+#service .one,#service .two{
+    padding-bottom:54px;
+}
+/*-------------- service section end *--------------/
+
+/*-------------- work section start-------------- */
+#work{
+    padding:110px 0; 
+}
+.work_card{
+    width:25%;
+    position: relative;
+    cursor:pointer;
+}
+
+#work .section_info{
+    padding:0 256px;  
+}
+#work .row{
+    padding-top:78px;
+}
+
+
+.work_card img{
+    width:100%;
+    display:block;
+    height:238px;
+}
+.work_card .overlay{
+    background-blend-mode: screen;
+    margin-top: 50px;
+    position:absolute;
+    inset:20px 28px;
+    visibility:hidden;
+    background-color:#02918c92;
+    color:white;
+    opacity:0;
+    transition: 0.7s;
+    padding:40px 38px 0;
+}
+
+.work_card:hover .overlay{
+    opacity:1;
+    visibility:visible;
+    margin-top:0;
+}
+.overlay h4{
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 800px;
+ }
+/*-------------- work section end-------------- */
+
+/* contact section starts */
+#contact .section_info{
+    padding:0 254px 70px;
+}
+/*-------------- contact section ends-------------- */
+
+
+/* --------------information section starts--------------*/
+#end .row{ 
+     background-color:#0b1016;
+    justify-content: center;
+    align-items: center;
+    color: #7e8287;
+    padding-top: 70px;
+  
+}
+
+#end .two li{
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-bottom: 82px; 
+}
+
+#end .one li::after{
+    border-bottom: 1px solid #7e8287;
+    padding-top:20px;
+    content: "";
+    margin: 0 auto;
+    display: block; 
+    width: 638px;
+    
+    
+}
+#end .two li::after{
+    content: "";
+    width: 917px;
+    border-bottom: 1px solid #7e8287;
+    padding-top:20px;
+     margin: 0 auto;
+    display: block;
+}
+
+#end .one li{
+    list-style-type: none;
+    font-size: 16px;
+    margin-bottom: 88px; 
+    text-transform: uppercase;
+}
+
+#end .ending a{
+   
+    background-color: #cfc91d;
+    padding: 19px 65px;
+    color: #0b1016;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: 0.45s;
+}
+#end a:hover{
+    color: white;
+}
+#end p{
+    margin-bottom: 70px;
+}
+/*-------------- information section ends-------------- */
+
+/*-------------- my folio start-------------- */
+#my_folio p{
+    color: #76797e;
+    padding:35px 0;
+    background-color: #000000;
+   
+}
+/*-------------- my folio end-------------- */
+
+
+
